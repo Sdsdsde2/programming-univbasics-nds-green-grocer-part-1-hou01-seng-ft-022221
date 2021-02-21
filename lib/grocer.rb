@@ -10,8 +10,8 @@ def find_item_by_name_in_collection(name, collection)
         return key
       end
     end
-    return nil
   end
+  return nil
 end
 
 def consolidate_cart(cart)
