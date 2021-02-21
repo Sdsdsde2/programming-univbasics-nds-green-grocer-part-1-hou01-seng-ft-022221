@@ -8,7 +8,6 @@ def find_item_by_name_in_collection(name, collection)
     key.each do |inner_key, inner_value|
       binding.pry  
     end
-    binding.pry
   end
 end
 
