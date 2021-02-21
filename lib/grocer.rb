@@ -23,7 +23,7 @@ def consolidate_cart(cart)
   count = 1
   cart.each do |key|
     key.each do |inner_key, inner_value|
-      new_hash.merge!(key.merge(count))
+      new_hash.merge!(key.merge(:count count))
       binding.pry
     end
   end
