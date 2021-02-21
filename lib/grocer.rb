@@ -19,8 +19,6 @@ def consolidate_cart(cart)
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
-  new_hash = { }
-  item_count = 1
   cart.group_by(&:itself).map do |key, value|
     key.merge(count: value.length)
   end
