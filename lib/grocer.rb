@@ -21,11 +21,8 @@ def consolidate_cart(cart)
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   new_hash = { }
   item_count = 1
-  cart.each do |key|
-    key.each do |inner_key, inner_value|
-      new_hash.merge!(key.merge(count: item_count))
-      binding.pry
-    end
+  cart.tally.map do | |
+    
   end
 end
 
