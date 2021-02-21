@@ -21,7 +21,7 @@ def consolidate_cart(cart)
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   new_hash = { }
   item_count = 1
-  cart.tally.map do | |
+  cart.tally.map do |key, value|
     
   end
 end
