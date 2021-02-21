@@ -22,7 +22,7 @@ def consolidate_cart(cart)
   new_hash = { }
   item_count = 1
   cart.tally.map do |key, value|
-    
+    binding.pry
   end
 end
 
